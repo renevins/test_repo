@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A demonstration of how to access a Text Field</h3>
+
+<input type="text" id="myName" value="Enter your name">
+
+<p>Click the "Turn it around" button to reverse your name.</p>
+
+<button onclick="myFunction()">Turn It</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myName").value;
+  var reverseName = "";
+
+  for (i = x.length - 1; i > -1; i--) {
+  	reverseName += x[i];
+}
+  document.getElementById("demo").innerHTML = reverseName;
+}
+</script>
+
+</body>
+</html>

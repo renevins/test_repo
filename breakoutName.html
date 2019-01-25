@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Input a name and break it down into first name and last name.</p>
+
+<p id="demo"></p>
+
+<script>
+var txt
+var str = prompt("Please enter your name:", "Bugs Bunny");
+var pos = str.indexOf(" ");
+var fname = str.slice(0,pos);
+var lname = str.slice(pos+1,);
+
+//txt = pos + "<br />" + fname + "<br />" + lname;
+
+document.getElementById("demo").innerHTML = pos + "<br />" + "First name = " + fname + "<br />" + "Last name = " +lname;
+</script>
+
+</body>
+</html>
